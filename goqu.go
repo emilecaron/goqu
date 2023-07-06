@@ -1,22 +1,21 @@
 /*
 goqu an idiomatch SQL builder, and query package.
 
-      __ _  ___   __ _ _   _
-     / _` |/ _ \ / _` | | | |
-    | (_| | (_) | (_| | |_| |
-     \__, |\___/ \__, |\__,_|
-     |___/          |_|
+	  __ _  ___   __ _ _   _
+	 / _` |/ _ \ / _` | | | |
+	| (_| | (_) | (_| | |_| |
+	 \__, |\___/ \__, |\__,_|
+	 |___/          |_|
 
-
-Please see https://github.com/doug-martin/goqu for an introduction to goqu.
+Please see https://github.com/emilecaron/goqu for an introduction to goqu.
 */
 package goqu
 
 import (
 	"time"
 
-	"github.com/doug-martin/goqu/v9/internal/util"
-	"github.com/doug-martin/goqu/v9/sqlgen"
+	"github.com/emilecaron/goqu/v9/internal/util"
+	"github.com/emilecaron/goqu/v9/sqlgen"
 )
 
 type DialectWrapper struct {
