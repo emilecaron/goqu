@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/emilecaron/goqu/v9/internal/util"
+	"github.com/doug-martin/goqu/v9/internal/util"
 )
 
 // Alternative to writing map[string]interface{}. Can be used for Inserts, Updates or Deletes

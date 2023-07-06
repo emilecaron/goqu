@@ -3,11 +3,11 @@ package sqlgen_test
 import (
 	"testing"
 
-	"github.com/emilecaron/goqu/v9"
-	"github.com/emilecaron/goqu/v9/exp"
-	"github.com/emilecaron/goqu/v9/internal/errors"
-	"github.com/emilecaron/goqu/v9/internal/sb"
-	"github.com/emilecaron/goqu/v9/sqlgen"
+	"github.com/doug-martin/goqu/v9"
+	"github.com/doug-martin/goqu/v9/exp"
+	"github.com/doug-martin/goqu/v9/internal/errors"
+	"github.com/doug-martin/goqu/v9/internal/sb"
+	"github.com/doug-martin/goqu/v9/sqlgen"
 	"github.com/stretchr/testify/suite"
 )
 

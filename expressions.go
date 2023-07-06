@@ -1,8 +1,7 @@
 package goqu
 
 import (
-	"fmt"
-	"github.com/emilecaron/goqu/v9/exp"
+	"github.com/doug-martin/goqu/v9/exp"
 )
 
 type (
@@ -131,8 +130,6 @@ func SUM(col interface{}) exp.SQLFunctionExpression { return newIdentifierFunc("
 //	JSONB_AGG("a") -> JSONB_AGG("a")
 //	JSONB_AGG(I("a")) -> JSONB_AGG("a")
 func JSONB_AGG(col interface{}) exp.SQLFunctionExpression { return newIdentifierFunc("JSONB_AGG", col) }
-
-fmt.Println("helloworld")
 
 // Creates a new COALESCE sql function
 //
