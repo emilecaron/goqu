@@ -131,6 +131,14 @@ func SUM(col interface{}) exp.SQLFunctionExpression { return newIdentifierFunc("
 //	JSONB_AGG(I("a")) -> JSONB_AGG("a")
 func JSONB_AGG(col interface{}) exp.SQLFunctionExpression { return newIdentifierFunc("JSONB_AGG", col) }
 
+// Creates a new JSON_BUILD_OBJECT sql function
+//
+//	JSON_BUILD_OBJECT("a") -> JSON_BUILD_OBJECT("a")
+//	JSON_BUILD_OBJECT(I("a")) -> JSON_BUILD_OBJECT("a")
+func JSON_BUILD_OBJECT(col interface{}) exp.SQLFunctionExpression {
+	return newIdentifierFunc("JSON_BUILD_OBJECT", col)
+}
+
 // Creates a new COALESCE sql function
 //
 //	COALESCE(I("a"), "a") -> COALESCE("a", 'a')
